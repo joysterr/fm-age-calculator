@@ -35,4 +35,4 @@ Mobile version:
 ## Author
 
 - GitHub - [@joysterr](https://github.com/joysterr)
-- Frontend Mentor - [@yjoysterr](https://www.frontendmentor.io/profile/joysterr)
+- Frontend Mentor - [@joysterr](https://www.frontendmentor.io/profile/joysterr)
