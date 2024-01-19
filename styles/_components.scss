@@ -1,0 +1,71 @@
+// age cacl 
+.calculator {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    width: min(50rem, calc(100% - 2rem));
+    margin-inline: auto;
+
+    background-color: var(--c-white);
+
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 12rem;
+
+
+    &__input {
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--c-light-grey);
+
+        .input__element {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            & > label {
+                font-weight: bold;
+                font-size: .7rem;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+
+                color: var(--c-smokey-grey)
+            }
+
+            & > input {
+                padding: 1rem;
+                width: 10rem;
+
+                font-size: 2rem;
+                font-weight: bold;
+
+                border: 1px solid var(--c-light-grey);
+
+                border-radius: .5rem;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 1rem;
+        max-width: 5rem;
+        border-radius: 50%;
+        background-color: var(--c-purple);
+
+        svg {
+            display: block;
+        }
+    }
+
+    &__result {
+        & > h1 {
+            font-size: 6rem;
+            margin-bottom: -2rem;
+        }
+    }
+
+    .result__num {
+        color: var(--c-purple);
+    }
+}

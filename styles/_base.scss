@@ -7,6 +7,28 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     min-height: 100dvh;
     font-family: Poppins, sans-serif;
+
+    background-color: var(--c-light-grey);
+}
+
+button {
+    display: block;
+    background: none;
+    border: none;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-style: italic;
 }

@@ -10,19 +10,30 @@
       
     </head>
     <body>
-
-        Day
-        DD
-
-        Month
-        MM
-
-        Year
-        YYYY
-
-        -- years
-        -- months
-        -- days
+        <main class="calculator">
+            <form class="calculator__input">
+                <div class="input__element">
+                    <label for="inputDay">Day</label>
+                    <input id="inputDay" type="number" placeholder="DD">
+                </div>
+                <div class="input__element">
+                    <label for="inputMonth">Month</label>
+                    <input id="inputMonth" type="number" placeholder="MM">
+                </div>
+                <div class="input__element">
+                    <label for="inputYear">Year</label>
+                    <input id="inputYear" type="number" placeholder="YYYY">
+                </div>
+            </form>
+            <button id="submitBtn" class="calculator__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+            </button>
+            <div class="calculator__result">
+                <h1><span class="result__num" id="years">--</span> years</h1>
+                <h1><span class="result__num" id="months">--</span> months</h1>
+                <h1><span class="result__num" id="days">--</span>days</h1>
+            </div>
+        </main>
         <script src="./scripts/main.js"></script>
     </body>
 </html>
