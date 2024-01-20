@@ -74,6 +74,9 @@ h1 {
   background-color: var(--c-white);
   border-radius: 1.5rem;
   border-bottom-right-radius: 12rem;
+  -webkit-box-shadow: 0px 0px 73px -76px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 73px -76px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 73px -76px rgba(0, 0, 0, 0.45);
 }
 .calculator__input {
   position: relative;
@@ -104,6 +107,10 @@ h1 {
   border: 1px solid var(--c-light-grey);
   border-radius: 0.5rem;
 }
+.calculator .input-wrapper .input__element > input:focus {
+  outline-color: var(--c-purple);
+  caret-color: var(--c-purple);
+}
 .calculator__btn {
   position: absolute;
   bottom: 0;
@@ -114,6 +121,10 @@ h1 {
   max-width: 7rem;
   border-radius: 50%;
   background-color: var(--c-purple);
+  transition: background-color 0.3s ease;
+}
+.calculator__btn:hover {
+  background-color: var(--c-off-black);
 }
 .calculator__btn svg {
   display: block;
