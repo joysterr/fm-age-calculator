@@ -2,32 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        
         <link rel="stylesheet" href="styles/main.css">
+        
         <title>Frontend Mentor | Age calculator app</title>
       
     </head>
     <body>
         <main class="calculator">
             <form class="calculator__input">
-                <div class="input__element">
-                    <label for="inputDay">Day</label>
-                    <input id="inputDay" type="number" placeholder="DD">
+                <div class="input-wrapper">
+                    <div class="input__element">
+                        <label for="inputDay">Day</label>
+                        <input id="inputDay" type="number" placeholder="DD">
+                    </div>
+                    <div class="input__element">
+                        <label for="inputMonth">Month</label>
+                        <input id="inputMonth" type="number" placeholder="MM">
+                    </div>
+                    <div class="input__element">
+                        <label for="inputYear">Year</label>
+                        <input id="inputYear" type="number" placeholder="YYYY">
+                    </div>
                 </div>
-                <div class="input__element">
-                    <label for="inputMonth">Month</label>
-                    <input id="inputMonth" type="number" placeholder="MM">
-                </div>
-                <div class="input__element">
-                    <label for="inputYear">Year</label>
-                    <input id="inputYear" type="number" placeholder="YYYY">
-                </div>
-            </form>
-            <button id="submitBtn" class="calculator__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
-            </button>
+                    <button id="submitBtn" class="calculator__btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+                    </button>
+                </form>
             <div class="calculator__result">
                 <h1><span class="result__num" id="years">--</span> years</h1>
                 <h1><span class="result__num" id="months">--</span> months</h1>

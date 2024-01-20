@@ -20,6 +20,7 @@ button {
   display: block;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 svg {
@@ -75,24 +76,27 @@ h1 {
   border-bottom-right-radius: 12rem;
 }
 .calculator__input {
+  position: relative;
+}
+.calculator .input-wrapper {
   display: flex;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid var(--c-light-grey);
 }
-.calculator__input .input__element {
+.calculator .input-wrapper .input__element {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.calculator__input .input__element > label {
+.calculator .input-wrapper .input__element > label {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--c-smokey-grey);
 }
-.calculator__input .input__element > input {
+.calculator .input-wrapper .input__element > input {
   padding: 1rem;
   width: 10rem;
   font-size: 2rem;
@@ -101,8 +105,13 @@ h1 {
   border-radius: 0.5rem;
 }
 .calculator__btn {
-  padding: 1rem;
-  max-width: 5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+  display: block;
+  padding: 1.5rem;
+  max-width: 7rem;
   border-radius: 50%;
   background-color: var(--c-purple);
 }
