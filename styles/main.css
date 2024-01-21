@@ -92,14 +92,17 @@ h1 {
   flex-direction: column;
   gap: 0.5rem;
 }
-.calculator .input-wrapper .input__element > label {
+.calculator .input-wrapper .input__element .input__label {
   font-weight: bold;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--c-smokey-grey);
 }
-.calculator .input-wrapper .input__element > input {
+.calculator .input-wrapper .input__element .error {
+  color: var(--c-light-red);
+}
+.calculator .input-wrapper .input__element .user__input {
   padding: 1rem;
   width: 10rem;
   font-size: 2rem;
@@ -107,9 +110,17 @@ h1 {
   border: 1px solid var(--c-light-grey);
   border-radius: 0.5rem;
 }
-.calculator .input-wrapper .input__element > input:focus {
+.calculator .input-wrapper .input__element .user__input:focus {
   outline-color: var(--c-purple);
   caret-color: var(--c-purple);
+}
+.calculator .input-wrapper .input__element .error-outline {
+  border: 1px solid var(--c-light-red);
+}
+.calculator .input-wrapper .input__element .input__error {
+  color: var(--c-light-red);
+  font-size: 0.8rem;
+  font-style: italic;
 }
 .calculator__btn {
   position: absolute;

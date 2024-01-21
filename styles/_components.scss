@@ -31,16 +31,21 @@
             flex-direction: column;
             gap: .5rem;
 
-            & > label {
+            .input__label {
                 font-weight: bold;
                 font-size: .8rem;
                 text-transform: uppercase;
                 letter-spacing: 4px;
 
-                color: var(--c-smokey-grey)
+                color: var(--c-smokey-grey);
             }
 
-            & > input {
+            // util
+            .error {
+                color: var(--c-light-red);
+            }
+
+            .user__input {
                 padding: 1rem;
                 width: 10rem;
 
@@ -55,6 +60,17 @@
                     outline-color: var(--c-purple);
                     caret-color: var(--c-purple);
                 }
+            }
+
+            // util
+            .error-outline {
+                border: 1px solid var(--c-light-red);
+            }
+
+            .input__error {
+                color: var(--c-light-red);
+                font-size: .8rem;
+                font-style: italic ;
             }
         }
     }

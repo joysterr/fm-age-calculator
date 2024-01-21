@@ -13,31 +13,34 @@
     </head>
     <body>
         <main class="calculator">
-            <form class="calculator__input">
+            <form id="inputForm" class="calculator__input">
                 <div class="input-wrapper">
                     <div class="input__element">
-                        <label for="inputDay">Day</label>
-                        <input id="inputDay" type="number" placeholder="DD">
+                        <label class="input__label" for="inputDay">Day</label>
+                        <input class="user__input" id="inputDay" type="number" placeholder="DD">
+                        <p class="input__error">&nbsp;</p>
                     </div>
                     <div class="input__element">
-                        <label for="inputMonth">Month</label>
-                        <input id="inputMonth" type="number" placeholder="MM">
+                        <label class="input__label" for="inputMonth">Month</label>
+                        <input class="user__input" id="inputMonth" type="number" placeholder="MM">
+                        <p class="input__error">&nbsp;</p>
                     </div>
                     <div class="input__element">
-                        <label for="inputYear">Year</label>
-                        <input id="inputYear" type="number" placeholder="YYYY">
+                        <label class="input__label" for="inputYear">Year</label>
+                        <input class="user__input" id="inputYear" type="number" placeholder="YYYY">
+                        <p class="input__error">&nbsp;</p>
                     </div>
                 </div>
                     <button id="submitBtn" class="calculator__btn" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
                     </button>
-                </form>
+            </form>
             <div class="calculator__result">
-                <h1><span class="result__num" id="years">--</span> years</h1>
-                <h1><span class="result__num" id="months">--</span> months</h1>
-                <h1><span class="result__num" id="days">--</span>days</h1>
+                <h1><span class="result__num" id="outputYear">--</span> years</h1>
+                <h1><span class="result__num" id="outputMonth">--</span> months</h1>
+                <h1><span class="result__num" id="outputDay">--</span>days</h1>
             </div>
         </main>
-        <script src="./scripts/main.js"></script>
+        <script type="module" src="./scripts/submitForm.js"></script>
     </body>
 </html>
