@@ -29,7 +29,10 @@ function handleSubmit(e) {
     formValidation(inputData)
 
     if (formValidation) {
-        calc(inputYear, inputMonth, inputDay)
+        const output = calc(inputYear, inputMonth, inputDay)
+        outputDay.innerHTML = output[2]
+        outputMonth.innerHTML = output[1]
+        outputYear.innerHTML = output[0]
     }
 }
 

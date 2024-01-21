@@ -15,4 +15,6 @@ export function calc(year, month, day) {
     const daysDifference = timeDifferenceDate.getUTCDate() - 1 // to account for the initial day
 
     console.log(`Years: ${yearsDifference} | Months: ${monthsDifference} | Days: ${daysDifference}`)
+    
+    return [yearsDifference, monthsDifference, daysDifference]
 }
