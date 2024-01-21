@@ -1,6 +1,6 @@
 export function calc(year, month, day) {
 
-    const targetDate = new Date(year, month, day)
+    const targetDate = new Date(year, month-1, day)
 
     console.log(targetDate)
 
