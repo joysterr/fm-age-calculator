@@ -11,12 +11,7 @@ const inputError = document.querySelectorAll('.input__error')
 
 const today = new Date()
 
-userInput.forEach((input) => {
-    input.addEventListener('click', () => {
-        resetInputs()
-    })
-})
-
+// handle submit
 inputForm.addEventListener('submit', (e) => {
     handleSubmit(e)
 })
@@ -33,6 +28,15 @@ function handleSubmit(e) {
     console.log(inputData)
 
     const isInputValid = formValidation(inputData)
+
+    if (!isInputValid) {
+        // reset inputs
+        userInput.forEach((input) => {
+            input.addEventListener('click', () => {
+                resetInputs()
+            })
+        })
+    }
 
     if (isInputValid) {
         const output = calc(inputYear, inputMonth, inputDay)
