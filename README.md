@@ -16,14 +16,14 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 Desktop version:
-![Desktop Screenshot](/)
-Mobile version:  
-[Mobile Screenshot](/)
+![Desktop Screenshot](/)  
+Mobile version:   
+[Mobile Screenshot](/)  
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/joysterr/fm-)
-- Live Site URL: [GitHub Pages](https://joysterr.github.io/fm-)
+- Solution URL: [GitHub Repo](https://github.com/joysterr/fm-)  
+- Live Site URL: [GitHub Pages](https://joysterr.github.io/fm-)  
 
 ## My process
 ### Built with
