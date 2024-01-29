@@ -16,20 +16,20 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 Desktop version:
-![Desktop Screenshot](/)  
+![Desktop Screenshot](./screenshots/desktop.png)  
 Mobile version:   
-[Mobile Screenshot](/)  
+[Mobile Screenshot](./screenshots/mobile.png)  
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/joysterr/fm-)  
-- Live Site URL: [GitHub Pages](https://joysterr.github.io/fm-)  
+- Solution URL: [GitHub Repo](https://github.com/joysterr/fm-age-calculator)  
+- Live Site URL: [GitHub Pages](https://joysterr.github.io/fm-age-calculator)  
 
 ## My process
 ### Built with
 
 - HTML, form validation
-- SASS/SCSS
+- Vanilla CSS
 - JS
 
 ## Author

@@ -206,10 +206,14 @@ h1 {
 		max-width: 7rem;
 	}
 
+    .result {
+        padding-bottom: 3rem;
+    }
+
 	.result__text {
 		font-size: 3rem;
 		margin-bottom: -1.5rem;
-	}
+	} 
 }
 
 
